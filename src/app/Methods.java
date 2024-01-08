@@ -1,5 +1,7 @@
 package app;
 
+import java.util.Scanner;
+
 public class Methods {
      static int multiply(int num1, int num2) {
          return num1 * num2;
@@ -18,5 +20,20 @@ public class Methods {
          resultArray[4] = array[3];
          resultArray[5] = array[4];
          return resultArray;
+    }
+
+    static void readThreeLines(Scanner scanner) {
+         String s1, s2, s3;
+         s1 = scanner.nextLine();
+         s2 = scanner.nextLine();
+         s3 = scanner.nextLine();
+         String[] lines = new String[] {s1, s2, s3};
+         for (int i = 0; i < lines.length; i++) {
+             System.out.println(lines[i]);
+         }
+         for (int i = lines.length - 1; i >= 0; i--) {
+             System.out.println(lines[i]);
+         }
+
     }
 }

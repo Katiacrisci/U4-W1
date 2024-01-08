@@ -1,6 +1,8 @@
 package app;
 
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println(Methods.multiply(10, 9));
@@ -14,6 +16,10 @@ public class Main {
         for (int i = 0; i < finalArray.length; i++) {
             System.out.println(finalArray[i]);
         }
+
+        Scanner scanner = new Scanner(System.in);
+        Methods.readThreeLines(scanner);
+        scanner.close();
 
 
 
