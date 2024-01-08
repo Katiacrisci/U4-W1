@@ -21,11 +21,8 @@ public class Main {
         Methods.readThreeLines(scanner);
         scanner.close();
 
-
-
-
-
-
-
+        System.out.println(Methods.perimeterRectangle(1.5f, 2.4f));
+        System.out.println(Methods.evenOrOdd(5));
+        System.out.println(Methods.perimeterTriangle(3.5f, 4.6f, 7.8f));
     }
 }
