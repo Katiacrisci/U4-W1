@@ -9,6 +9,7 @@ public class Main {
         System.out.println(annoBisestile(2025));
         printString(5);
         printWhileQ();
+        countDown();
 
 
 
@@ -56,6 +57,16 @@ public class Main {
            str = scanner.nextLine();
         }
 
+
+    }
+
+    static void countDown() {
+        Scanner scanner  = new Scanner(System.in);
+        System.out.println("enter a number");
+        int number = scanner.nextInt();
+        for (int i = number; i >= 0; i--) {
+            System.out.println(i);
+        }
     }
 
 }
